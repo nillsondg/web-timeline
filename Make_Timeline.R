@@ -52,8 +52,8 @@ for(year in year.low:year.high){
     #append request data to data frame
     data <- rbind(data, data.request)
     
-    # maybe this break exhausting captcha service
-    Sys.sleep(runif(1, 100.0, 120.0))
+    # prevent yandex captcha service
+    Sys.sleep(100)
   }
 }
 
